@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>四国旅 - 高田中</title>
+  <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+  <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+  <div class="container">
+    <div class="main-title">
+      <h1>チキチキ高田中学野球部<br/><span class="font-red">四国遠征</span>編</h1>
+      <span class="main-description">突発四国旅行のサポート・ポータルです。</span>
+    </div>
+    <div class="border"></div>
+    <section class="preparation">
+      <div class="sub-title">
+        <img src="./img/shikoku.png" class="icon">
+        <h2>出発前の準備</h2>
+      </div>
+      <h3 class="belongings-header">もちもの</h3>
+      <div class="belongings" id="belongings"></div>
+
+      <div class="clothes">
+        <h3 class="clothes-header">服装</h3>
+        <p>厚着しすぎない</p>
+      </div>
+    </section>
+
+    <div class="border"></div>
+    <div class="sub-title">
+      <img src="./img/shikoku.png" class="icon">
+      <h2>1日目の予定(東京〜フェリー)</h2>
+    </div>
+    <section class="day1" id="day1"></section>
+    <h3>1日目関連情報</h3>
+    <ul>
+      <li>
+        <a href="https://www.otf.jp/schedule.html">フェリー運行情報</a>
+      </li>
+      <li>
+        <a href="https://www.otf.jp/guide/bizan.html">船舶情報</a>
+      </li>
+      <li>
+        <a href="https://www.otf.jp/terminal/tokyo.html">乗り場情報</a>
+      </li>
+    </ul>
+    <div class="map-area">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d103789.4479700171!2d139.795645!3d35.617365!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60186272feff2b79%3A0x63a9362ff352f323!2z5pel5pys44CB44CSMTM1LTAwNjMg5p2x5Lqs6YO95rGf5p2x5Yy65pyJ5piO77yU5LiB55uu77yY4oiS77yW!5e0!3m2!1sja!2sus!4v1619711124510!5m2!1sja!2sus" width="100%" height="350px" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+
+    <div class="border"></div>
+    <div class="sub-title">
+      <img src="./img/shikoku.png" class="icon">
+      <h2>2日目の予定(フェリー〜徳島)</h2>
+    </div>
+    <section class="day2" id="day2"></section>
+    <h3>2日目関連情報</h3>
+    <ul>
+      <li class="weather-mini">
+        クリックして詳細→
+        <a class="weather" href="https://www.google.com/search?q=%E5%BE%B3%E5%B3%B6+%E5%A4%A9%E6%B0%97&oq=%E5%BE%B3%E5%B3%B6%E3%80%80%E5%A4%A9%E6%B0%97&aqs=chrome..69i57j0i131i433j0j0i7i30l4j0j0i7i30j0.2596j1j7&sourceid=chrome&ie=UTF-8">
+          <img src="./img/weather_tokushima.png" alt=""></a>
+      </li>
+      <!-- <li>
+        <a href="https://www.otf.jp/schedule.html">フェリー運行情報</a>
+      </li> -->
+    </ul>
+    <div class="map-area">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d4981.483209929191!2d134.59564979853695!3d34.0543306172452!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35536cdee88d1ac3%3A0xe4d6d109398d40e!2z44Kq44O844K344Oj44Oz5p2x5Lmd44OV44Kn44Oq44O8IOW-s-WztijmspbmtLIpIOOBruOCiuOBsA!5e0!3m2!1sja!2sjp!4v1619712565331!5m2!1sja!2sjp" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+
+    <div class="border"></div>
+    <div class="sub-title">
+      <img src="./img/shikoku.png" class="icon">
+      <h2>3日目の予定(高松〜帰路)</h2>
+    </div>
+    <section class="day3" id="day3"></section>
+    <h3>3日目関連情報</h3>
+    <ul>
+      <li class="weather-mini">
+        クリックして詳細→
+        <a href="https://www.google.com/search?q=%E9%AB%98%E6%9D%BE+%E5%A4%A9%E6%B0%97&safe=off&sxsrf=ALeKk021EhLfyP7pcGg8AIF5mzmHPTpP9A%3A1619710207313&ei=_9CKYP_MEpuGoASYqaO4DQ&oq=%E9%AB%98%E6%9D%BE+%E5%A4%A9%E6%B0%97&gs_lcp=Cgdnd3Mtd2l6EAMyCAgAELEDEIMBMgQIABBDMgQIABBDMgIIADICCAAyAggAMgIIADIGCAAQBxAeOgcIABBHELADOggIABAHEAQQHlClxlNYwstTYIvOU2gCcAJ4AIABmAGIAcAIkgEDMi44mAEAoAEBqgEHZ3dzLXdpesgBB8ABAQ&sclient=gws-wiz&ved=0ahUKEwi_yK7c4qPwAhUbA4gKHZjUCNcQ4dUDCA4&uact=5">
+          <img src="./img/weather_takamatsu.png" alt=""></a>
+      </li>
+      <!-- <li>
+        <a href="https://www.otf.jp/schedule.html">フェリー運行情報</a>
+      </li> -->
+    </ul>
+    <div class="map-area">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3299.3114991798834!2d134.01370641521933!3d34.215063880561864!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3553eb0326090c09%3A0xce3668e952dafb87!2z6auY5p2-56m65riv!5e0!3m2!1sja!2sjp!4v1619712676989!5m2!1sja!2sjp" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+
+    <div class="border"></div>
+    <div class="links">
+      <h2 class="link-title">リンク系</h2>
+      <div id="link-area"></div>
+    </div>
+
+  </div>
+
+
+
+  <footer>
+    <span>NAVITIME JAPAN</span>
+    <span>© 2021 Takada Junior High School INC. All Rights Reserved.</span>
+  </footer>
+</body>
+
+
+<!-- 読み込み -->
+
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+<script src="https://unpkg.com/element-ui/lib/index.js"></script>
+<script src="./js/index.js"></script>
+
+</html>

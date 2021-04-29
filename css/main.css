@@ -1,0 +1,85 @@
+body, html {
+  margin: 0;
+}
+
+.container {
+  padding: 8px;
+}
+
+.font-red {
+  color: #fa8072;
+}
+
+li {
+  list-style-type: none;
+  line-height: 28px;
+}
+
+ul {
+  padding: 0 16px;
+}
+
+iframe {
+  height: 60vh;
+  margin-bottom: 28px;
+}
+
+.main-description {
+  font-size: 14px;
+  color: #999;
+}
+
+.weather-mini {
+  display: flex;
+  align-items: center;
+}
+
+.weather-mini img {
+  width: 80px;
+}
+
+.time {
+  font-weight: bolder;
+  padding-right: 8px;
+}
+
+.icon {
+  width: 80px;
+  margin-right: 8px;
+}
+
+.map-area {
+  width: 100%;
+}
+
+.sub-title {
+  display: flex;
+  padding-top: 16px;
+}
+
+.border {
+  border-bottom: #dfdfdf 1px solid;
+  padding: 16px 0;
+  width: 90%;
+  height: 1px;
+  margin: 0 auto;
+}
+
+footer {
+  width: 100%;
+  height: 120px;
+  display: flex;
+  background: #333;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+footer span {
+  color: #fff;
+}
+
+footer span:nth-child(2) {
+  font-size: 14px;
+  text-align: center;
+}
